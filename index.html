@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Todo List</title>
+</head>
+<body>
+    <div id="todo-container">
+        <h2>Todo List</h2>
+        <input type="text" id="taskInput" placeholder="Add a new task">
+        <button onclick="addTask()">Add</button>
+
+        <div id="tabs">
+            <button onclick="showTab('all')">All</button>
+            <button onclick="showTab('pending')">Pending</button>
+            <button onclick="showTab('completed')">Completed</button>
+        </div>
+
+        <div id="all-tab" class="tab">
+            <h3>All Tasks</h3>
+            <ul id="todo-list"></ul>
+        </div>
+
+        <div id="pending-tab" class="tab">
+            <h3>Pending Tasks</h3>
+            <ul id="pending-list"></ul>
+        </div>
+
+        <div id="completed-tab" class="tab">
+            <h3>Completed Tasks</h3>
+            <ul id="completed-list"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
